@@ -1,6 +1,7 @@
 package bluesteel42.maplewood.block;
 
 import bluesteel42.maplewood.MapleWood;
+import bluesteel42.maplewood.particle.ModParticles;
 import bluesteel42.maplewood.world.tree.ModSaplingGenerators;
 import com.terraformersmc.terraform.sign.api.block.TerraformHangingSignBlock;
 import com.terraformersmc.terraform.sign.api.block.TerraformSignBlock;
@@ -182,7 +183,7 @@ public class ModBlocks {
 
     public static final Block MAPLE_LEAVES = register(
             "maple_leaves",
-            settings -> new UntintedParticleLeavesBlock(0.01F, ParticleTypes.CHERRY_LEAVES, settings),
+            settings -> new UntintedParticleLeavesBlock(0.01F, ModParticles.MAPLE_LEAVES, settings),
             Blocks.createLeavesSettings(BlockSoundGroup.GRASS), true, true
     );
     public static final Block MAPLE_SAPLING = register(
