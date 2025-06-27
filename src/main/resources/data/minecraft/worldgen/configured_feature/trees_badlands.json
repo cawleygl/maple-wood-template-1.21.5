@@ -1,0 +1,12 @@
+{
+  "type": "minecraft:random_selector",
+  "config": {
+    "default": "maple-wood:maple_leaf_litter",
+    "features": [
+      {
+        "chance": 0.0125,
+        "feature": "maple-wood:fallen_maple_tree"
+      }
+    ]
+  }
+}

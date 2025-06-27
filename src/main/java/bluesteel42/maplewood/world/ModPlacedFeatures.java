@@ -14,13 +14,29 @@ import java.util.List;
 
 public class ModPlacedFeatures {
 
-    public static final RegistryKey<PlacedFeature> MAPLE_PLACED_KEY = registerKey("mega_maple");
+    public static final RegistryKey<PlacedFeature> MAPLE_PLACED_KEY = registerKey("maple");
+    public static final RegistryKey<PlacedFeature> MAPLE_LEAF_LITTER_PLACED_KEY = registerKey("maple_leaf_litter");
+    public static final RegistryKey<PlacedFeature> MAPLE_PLACED_BEES_005_KEY = registerKey("maple_bees_005");
+    public static final RegistryKey<PlacedFeature> FANCY_MAPLE_PLACED_KEY = registerKey("fancy_maple");
+    public static final RegistryKey<PlacedFeature> FANCY_MAPLE_PLACED_BEES_005_KEY = registerKey("fancy_maple_bees_005");
     public static final RegistryKey<PlacedFeature> FALLEN_MAPLE_PLACED_KEY = registerKey("fallen_maple_tree");
 
     public static void bootstrap(Registerable<PlacedFeature> context) {
         var configuredFeatures = context.getRegistryLookup(RegistryKeys.CONFIGURED_FEATURE);
 
         register(context, MAPLE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MAPLE_KEY),
+                PlacedFeatures.wouldSurvive(ModBlocks.MAPLE_SAPLING)
+        );
+        register(context, MAPLE_LEAF_LITTER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MAPLE_KEY),
+                PlacedFeatures.wouldSurvive(ModBlocks.MAPLE_SAPLING)
+        );
+        register(context, MAPLE_PLACED_BEES_005_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.MAPLE_BEES_005_KEY),
+                PlacedFeatures.wouldSurvive(ModBlocks.MAPLE_SAPLING)
+        );
+        register(context, FANCY_MAPLE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.FANCY_MAPLE_KEY),
+                PlacedFeatures.wouldSurvive(ModBlocks.MAPLE_SAPLING)
+        );
+        register(context, FANCY_MAPLE_PLACED_BEES_005_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.FANCY_MAPLE_BEES_005_KEY),
                 PlacedFeatures.wouldSurvive(ModBlocks.MAPLE_SAPLING)
         );
         register(context, FALLEN_MAPLE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.FALLEN_MAPLE_TREE_KEY),

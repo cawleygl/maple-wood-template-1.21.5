@@ -1,0 +1,18 @@
+// 1.21.5	-999999999-01-01T00:00:00	Maple Wood/Tags for minecraft:item
+9a2e079f02d5b089efc852a14072372d8880ca20 data/maple-wood/tags/item/maple_logs.json
+e1586828178bbd00805535664800acde6c4e8f53 data/minecraft/tags/item/boats.json
+f26355a75cd79347c6064641ba4ddda84e5d3415 data/minecraft/tags/item/chest_boats.json
+49d5e58f837d76107d945cc4397b27c71dc20019 data/minecraft/tags/item/fence_gates.json
+d2b46e83dbec132cba4da50a55a3edb39912b6e1 data/minecraft/tags/item/hanging_signs.json
+a903b11b56236ee35f5b5328b61b8422b8527c4e data/minecraft/tags/item/leaves.json
+905054dd2f38d29a3a5d8b9a3764c5a67a9061a3 data/minecraft/tags/item/logs_that_burn.json
+3b1af1cc3eb24c1b86908a4be23846ca7763145d data/minecraft/tags/item/planks.json
+f825c3fc108c18a0edf041ed2d1be2ae3612dc91 data/minecraft/tags/item/saplings.json
+cfac482136246a7d6a7ece8af3cdc244f00ec93c data/minecraft/tags/item/signs.json
+c8a9dfd7982157fdb2ed0ef7f31504d6932a0c3c data/minecraft/tags/item/wooden_buttons.json
+a17b54a696a4482063e528ba369faf8674ba570c data/minecraft/tags/item/wooden_doors.json
+7138fda05a2b2966c0e63f9b70ca2771fc1a235d data/minecraft/tags/item/wooden_fences.json
+992d0521d60781255c4b2b320c58845713e8386b data/minecraft/tags/item/wooden_pressure_plates.json
+740b7e12689eca9f6324b29a608fc6eee31e3ee7 data/minecraft/tags/item/wooden_slabs.json
+65c2de112931dd875e70b144e13d886adba5c4c9 data/minecraft/tags/item/wooden_stairs.json
+99c45c22727dc263de83ba5cd55a9ec429978886 data/minecraft/tags/item/wooden_trapdoors.json
