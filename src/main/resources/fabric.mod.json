@@ -1,0 +1,40 @@
+{
+	"schemaVersion": 1,
+	"id": "maple-wood",
+	"version": "1.0.0",
+	"name": "Maple Wood",
+	"description": "Adds Maple Trees to replace Oak in Wooded Badlands and Acacia biomes",
+	"authors": [
+		"BlueSteel42"
+	],
+	"contact": {
+		"homepage": "https://fabricmc.net/",
+		"sources": "https://github.com/FabricMC/fabric-example-mod"
+	},
+	"license": "CC0-1.0",
+	"icon": "assets/maple-wood/icon.png",
+	"environment": "*",
+	"entrypoints": {
+		"main": [
+			"bluesteel42.maplewood.MapleWood"
+		],
+		"client": [
+			"bluesteel42.maplewood.MapleWoodClient"
+		],
+		"fabric-datagen": [
+			"bluesteel42.maplewood.MapleWoodDataGenerator"
+		]
+	},
+	"mixins": [
+		"maple-wood.mixins.json"
+	],
+	"depends": {
+		"fabricloader": ">=0.16.14",
+		"minecraft": "~1.21.5",
+		"java": ">=21",
+		"fabric-api": "*"
+	},
+	"suggests": {
+		"another-mod": "*"
+	}
+}

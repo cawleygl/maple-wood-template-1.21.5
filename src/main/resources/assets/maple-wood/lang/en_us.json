@@ -1,0 +1,25 @@
+{
+  "item.maple-wood.maple_sign": "Maple Sign",
+  "item.maple-wood.maple_hanging_sign": "Maple Hanging Sign",
+  "item.maple-wood.maple_boat": "Maple Boat",
+  "item.maple-wood.maple_chest_boat": "Maple Boat with Chest",
+  "entity.maple-wood.maple_chest_boat": "Maple Boat with Chest",
+
+  "block.maple-wood.maple_log": "Maple Log",
+  "block.maple-wood.maple_wood": "Maple Wood",
+  "block.maple-wood.stripped_maple_log": "Stripped Maple Log",
+  "block.maple-wood.stripped_maple_wood": "Stripped Maple Wood",
+
+  "block.maple-wood.maple_planks": "Maple Planks",
+  "block.maple-wood.maple_stairs": "Maple Stairs",
+  "block.maple-wood.maple_slab": "Maple Slab",
+  "block.maple-wood.maple_button": "Maple Button",
+  "block.maple-wood.maple_pressure_plate": "Maple Pressure Plate",
+  "block.maple-wood.maple_fence": "Maple Fence",
+  "block.maple-wood.maple_fence_gate": "Maple Fence Gate",
+  "block.maple-wood.maple_door": "Maple Door",
+  "block.maple-wood.maple_trapdoor": "Maple Trapdoor",
+
+  "block.maple-wood.maple_leaves": "Maple Leaves",
+  "block.maple-wood.maple_sapling": "Maple Sapling"
+}
