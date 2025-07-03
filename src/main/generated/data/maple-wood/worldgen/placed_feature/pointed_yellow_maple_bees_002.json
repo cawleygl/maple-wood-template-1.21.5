@@ -1,0 +1,17 @@
+{
+  "feature": "maple-wood:pointed_yellow_maple_bees_002",
+  "placement": [
+    {
+      "type": "minecraft:block_predicate_filter",
+      "predicate": {
+        "type": "minecraft:would_survive",
+        "state": {
+          "Name": "maple-wood:yellow_maple_sapling",
+          "Properties": {
+            "stage": "0"
+          }
+        }
+      }
+    }
+  ]
+}
