@@ -10,11 +10,13 @@ import net.minecraft.util.Identifier;
 public class ModParticles {
 
     // This DefaultParticleType gets called when you want to use your particle in code.
-    public static final SimpleParticleType MAPLE_LEAVES = FabricParticleTypes.simple();
+    public static final SimpleParticleType RED_MAPLE_LEAVES = FabricParticleTypes.simple();
+    public static final SimpleParticleType YELLOW_MAPLE_LEAVES = FabricParticleTypes.simple();
 
 
     public static void initialize() {
         // Register our custom particle type in the mod initializer.
-        Registry.register(Registries.PARTICLE_TYPE, Identifier.of(MapleWood.MOD_ID, "maple_leaves"), MAPLE_LEAVES);
+        Registry.register(Registries.PARTICLE_TYPE, Identifier.of(MapleWood.MOD_ID, "red_maple_leaves"), RED_MAPLE_LEAVES);
+        Registry.register(Registries.PARTICLE_TYPE, Identifier.of(MapleWood.MOD_ID, "yellow_maple_leaves"), YELLOW_MAPLE_LEAVES);
     }
 }

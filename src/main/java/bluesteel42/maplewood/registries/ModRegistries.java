@@ -19,8 +19,12 @@ public class ModRegistries {
     }
 
     public static void registerCompostables() {
-        CompostingChanceRegistry.INSTANCE.add(ModBlocks.MAPLE_LEAVES, 0.3F);
-        CompostingChanceRegistry.INSTANCE.add(ModBlocks.MAPLE_SAPLING, 0.3F);
+        CompostingChanceRegistry.INSTANCE.add(ModBlocks.RED_MAPLE_LEAVES, 0.3F);
+        CompostingChanceRegistry.INSTANCE.add(ModBlocks.GREEN_MAPLE_LEAVES, 0.3F);
+        CompostingChanceRegistry.INSTANCE.add(ModBlocks.YELLOW_MAPLE_LEAVES, 0.3F);
+        CompostingChanceRegistry.INSTANCE.add(ModBlocks.GREEN_MAPLE_SAPLING, 0.3F);
+        CompostingChanceRegistry.INSTANCE.add(ModBlocks.RED_MAPLE_SAPLING, 0.3F);
+        CompostingChanceRegistry.INSTANCE.add(ModBlocks.YELLOW_MAPLE_SAPLING, 0.3F);
     }
 
     public static void registerFlammables() {
@@ -33,7 +37,9 @@ public class ModRegistries {
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.MAPLE_FENCE_GATE, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.MAPLE_FENCE, 5, 20);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.MAPLE_STAIRS, 5, 20);
-        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.MAPLE_LEAVES, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.GREEN_MAPLE_LEAVES, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.RED_MAPLE_LEAVES, 30, 60);
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.YELLOW_MAPLE_LEAVES, 30, 60);
     }
 
     public static void registerTrades() {
@@ -41,7 +47,19 @@ public class ModRegistries {
             wanderingTraderOffersBuilder.addOffersToPool(TradeOfferHelper.WanderingTraderOffersBuilder.SELL_COMMON_ITEMS_POOL,
                     (entity, random) -> new TradeOffer(
                             new TradedItem(Items.EMERALD, 5),
-                            new ItemStack(ModBlocks.MAPLE_SAPLING.asItem(), 1),
+                            new ItemStack(ModBlocks.GREEN_MAPLE_SAPLING.asItem(), 1),
+                            8,  1, 5)
+            );
+            wanderingTraderOffersBuilder.addOffersToPool(TradeOfferHelper.WanderingTraderOffersBuilder.SELL_COMMON_ITEMS_POOL,
+                    (entity, random) -> new TradeOffer(
+                            new TradedItem(Items.EMERALD, 5),
+                            new ItemStack(ModBlocks.RED_MAPLE_SAPLING.asItem(), 1),
+                            8,  1, 5)
+            );
+            wanderingTraderOffersBuilder.addOffersToPool(TradeOfferHelper.WanderingTraderOffersBuilder.SELL_COMMON_ITEMS_POOL,
+                    (entity, random) -> new TradeOffer(
+                            new TradedItem(Items.EMERALD, 5),
+                            new ItemStack(ModBlocks.YELLOW_MAPLE_SAPLING.asItem(), 1),
                             8,  1, 5)
             );
         });

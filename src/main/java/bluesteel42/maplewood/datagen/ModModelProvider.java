@@ -32,8 +32,12 @@ public class ModModelProvider extends FabricModelProvider {
         pinePlankPool.family(ModBlocks.MAPLE_SIGN_FAMILY);
         pinePlankPool.family(ModBlocks.MAPLE_HANGING_SIGN_FAMILY);
 
-        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.MAPLE_LEAVES);
-        blockStateModelGenerator.registerFlowerPotPlantAndItem(ModBlocks.MAPLE_SAPLING, ModBlocks.POTTED_MAPLE_SAPLING, BlockStateModelGenerator.CrossType.NOT_TINTED);
+        blockStateModelGenerator.registerTintedBlockAndItem(ModBlocks.GREEN_MAPLE_LEAVES, TexturedModel.LEAVES, FoliageColors.DEFAULT);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_MAPLE_LEAVES);
+        blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.YELLOW_MAPLE_LEAVES);
+        blockStateModelGenerator.registerFlowerPotPlantAndItem(ModBlocks.GREEN_MAPLE_SAPLING, ModBlocks.POTTED_GREEN_MAPLE_SAPLING, BlockStateModelGenerator.CrossType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlantAndItem(ModBlocks.RED_MAPLE_SAPLING, ModBlocks.POTTED_RED_MAPLE_SAPLING, BlockStateModelGenerator.CrossType.NOT_TINTED);
+        blockStateModelGenerator.registerFlowerPotPlantAndItem(ModBlocks.YELLOW_MAPLE_SAPLING, ModBlocks.POTTED_YELLOW_MAPLE_SAPLING, BlockStateModelGenerator.CrossType.NOT_TINTED);
 
     }
 

@@ -34,8 +34,14 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.MAPLE_HANGING_SIGN);
         addDrop(ModBlocks.MAPLE_WALL_HANGING_SIGN);
 
-        addDrop(ModBlocks.MAPLE_SAPLING);
-        addDrop(ModBlocks.POTTED_MAPLE_SAPLING, pottedPlantDrops(ModBlocks.MAPLE_SAPLING));
-        addDrop(ModBlocks.MAPLE_LEAVES, leavesDrops(ModBlocks.MAPLE_LEAVES, ModBlocks.MAPLE_SAPLING, 0.05f));
+        addDrop(ModBlocks.GREEN_MAPLE_SAPLING);
+        addDrop(ModBlocks.RED_MAPLE_SAPLING);
+        addDrop(ModBlocks.YELLOW_MAPLE_SAPLING);
+        addDrop(ModBlocks.POTTED_GREEN_MAPLE_SAPLING, pottedPlantDrops(ModBlocks.GREEN_MAPLE_LEAVES));
+        addDrop(ModBlocks.POTTED_RED_MAPLE_SAPLING, pottedPlantDrops(ModBlocks.RED_MAPLE_SAPLING));
+        addDrop(ModBlocks.POTTED_YELLOW_MAPLE_SAPLING, pottedPlantDrops(ModBlocks.YELLOW_MAPLE_SAPLING));
+        addDrop(ModBlocks.GREEN_MAPLE_LEAVES, leavesDrops(ModBlocks.GREEN_MAPLE_LEAVES, ModBlocks.GREEN_MAPLE_SAPLING, 0.05f));
+        addDrop(ModBlocks.RED_MAPLE_LEAVES, leavesDrops(ModBlocks.RED_MAPLE_LEAVES, ModBlocks.RED_MAPLE_SAPLING, 0.05f));
+        addDrop(ModBlocks.YELLOW_MAPLE_LEAVES, leavesDrops(ModBlocks.YELLOW_MAPLE_LEAVES, ModBlocks.YELLOW_MAPLE_SAPLING, 0.05f));
     }
 }

@@ -20,6 +20,10 @@
   "block.maple-wood.maple_door": "Maple Door",
   "block.maple-wood.maple_trapdoor": "Maple Trapdoor",
 
-  "block.maple-wood.maple_leaves": "Maple Leaves",
-  "block.maple-wood.maple_sapling": "Maple Sapling"
+  "block.maple-wood.red_maple_leaves": "Red Maple Leaves",
+  "block.maple-wood.green_maple_leaves": "Green Maple Leaves",
+  "block.maple-wood.yellow_maple_leaves": "Yellow Maple Leaves",
+  "block.maple-wood.red_maple_sapling": "Red Maple Sapling",
+  "block.maple-wood.green_maple_sapling": "Green Maple Sapling",
+  "block.maple-wood.yellow_maple_sapling": "Yellow Maple Sapling"
 }

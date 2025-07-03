@@ -17,8 +17,6 @@ import net.minecraft.data.family.BlockFamilies;
 import net.minecraft.data.family.BlockFamily;
 import net.minecraft.item.ItemGroups;
 import net.minecraft.item.Items;
-import net.minecraft.particle.ParticleEffect;
-import net.minecraft.particle.ParticleTypes;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.registry.RegistryKeys;
 import net.minecraft.sound.BlockSoundGroup;
@@ -27,10 +25,10 @@ import net.minecraft.util.Identifier;
 import java.util.function.Function;
 
 public class ModBlocks {
-    public static final Block MAPLE_LOG = register("maple_log", PillarBlock::new, Blocks.createLogSettings(MapColor.RAW_IRON_PINK, MapColor.TERRACOTTA_ORANGE, BlockSoundGroup.WOOD), true, false);
-    public static final Block MAPLE_WOOD = register("maple_wood", PillarBlock::new, Blocks.createLogSettings(MapColor.TERRACOTTA_ORANGE, MapColor.TERRACOTTA_ORANGE, BlockSoundGroup.WOOD), true, false);
-    public static final Block STRIPPED_MAPLE_LOG = register("stripped_maple_log", PillarBlock::new, Blocks.createLogSettings(MapColor.RAW_IRON_PINK, MapColor.RAW_IRON_PINK, BlockSoundGroup.WOOD), true, false);
-    public static final Block STRIPPED_MAPLE_WOOD = register("stripped_maple_wood", PillarBlock::new, Blocks.createLogSettings(MapColor.RAW_IRON_PINK, MapColor.RAW_IRON_PINK, BlockSoundGroup.WOOD), true, false);
+    public static final Block MAPLE_LOG = register("maple_log", PillarBlock::new, Blocks.createLogSettings(MapColor.TERRACOTTA_WHITE, MapColor.TERRACOTTA_GRAY, BlockSoundGroup.WOOD), true, false);
+    public static final Block MAPLE_WOOD = register("maple_wood", PillarBlock::new, Blocks.createLogSettings(MapColor.TERRACOTTA_GRAY, MapColor.TERRACOTTA_GRAY, BlockSoundGroup.WOOD), true, false);
+    public static final Block STRIPPED_MAPLE_LOG = register("stripped_maple_log", PillarBlock::new, Blocks.createLogSettings(MapColor.TERRACOTTA_WHITE, MapColor.TERRACOTTA_WHITE, BlockSoundGroup.WOOD), true, false);
+    public static final Block STRIPPED_MAPLE_WOOD = register("stripped_maple_wood", PillarBlock::new, Blocks.createLogSettings(MapColor.TERRACOTTA_WHITE, MapColor.TERRACOTTA_WHITE, BlockSoundGroup.WOOD), true, false);
     public static final Block MAPLE_PLANKS = register(
             "maple_planks",
             Block::new,
@@ -181,21 +179,59 @@ public class ModBlocks {
             .sign(ModBlocks.MAPLE_HANGING_SIGN, ModBlocks.MAPLE_WALL_HANGING_SIGN)
             .group("wooden").unlockCriterionName("has_planks").build();
 
-    public static final Block MAPLE_LEAVES = register(
-            "maple_leaves",
-            settings -> new UntintedParticleLeavesBlock(0.01F, ModParticles.MAPLE_LEAVES, settings),
+    public static final Block GREEN_MAPLE_LEAVES = register(
+            "green_maple_leaves",
+            settings -> new TintedParticleLeavesBlock(0.01F, settings),
             Blocks.createLeavesSettings(BlockSoundGroup.GRASS), true, true
     );
-    public static final Block MAPLE_SAPLING = register(
-            "maple_sapling",
-            settings -> new SaplingBlock(ModSaplingGenerators.MAPLE, settings),
+    public static final Block RED_MAPLE_LEAVES = register(
+            "red_maple_leaves",
+            settings -> new UntintedParticleLeavesBlock(0.01F, ModParticles.RED_MAPLE_LEAVES, settings),
+            Blocks.createLeavesSettings(BlockSoundGroup.GRASS), true, true
+    );
+    public static final Block YELLOW_MAPLE_LEAVES = register(
+            "yellow_maple_leaves",
+            settings -> new UntintedParticleLeavesBlock(0.01F, ModParticles.YELLOW_MAPLE_LEAVES, settings),
+            Blocks.createLeavesSettings(BlockSoundGroup.GRASS), true, true
+    );
+    public static final Block GREEN_MAPLE_SAPLING = register(
+            "green_maple_sapling",
+            settings -> new SaplingBlock(ModSaplingGenerators.GREEN_MAPLE, settings),
             AbstractBlock.Settings.copy(Blocks.OAK_SAPLING),
             true,
             true
     );
-    public static final Block POTTED_MAPLE_SAPLING = register(
-            "potted_maple_sapling",
-            settings -> new FlowerPotBlock(MAPLE_SAPLING, settings),
+    public static final Block RED_MAPLE_SAPLING = register(
+            "red_maple_sapling",
+            settings -> new SaplingBlock(ModSaplingGenerators.RED_MAPLE, settings),
+            AbstractBlock.Settings.copy(Blocks.OAK_SAPLING),
+            true,
+            true
+    );
+    public static final Block YELLOW_MAPLE_SAPLING = register(
+            "yellow_maple_sapling",
+            settings -> new SaplingBlock(ModSaplingGenerators.YELLOW_MAPLE, settings),
+            AbstractBlock.Settings.copy(Blocks.OAK_SAPLING),
+            true,
+            true
+    );
+    public static final Block POTTED_GREEN_MAPLE_SAPLING = register(
+            "potted_green_maple_sapling",
+            settings -> new FlowerPotBlock(GREEN_MAPLE_SAPLING, settings),
+            Blocks.createFlowerPotSettings(),
+            true,
+            true
+    );
+    public static final Block POTTED_YELLOW_MAPLE_SAPLING = register(
+            "potted_yellow_maple_sapling",
+            settings -> new FlowerPotBlock(YELLOW_MAPLE_SAPLING, settings),
+            Blocks.createFlowerPotSettings(),
+            true,
+            true
+    );
+    public static final Block POTTED_RED_MAPLE_SAPLING = register(
+            "potted_red_maple_sapling",
+            settings -> new FlowerPotBlock(RED_MAPLE_SAPLING, settings),
             Blocks.createFlowerPotSettings(),
             true,
             true
@@ -238,8 +274,12 @@ public class ModBlocks {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL)
                 .register((itemGroup) -> {
                     itemGroup.addAfter(Items.PALE_OAK_LOG, ModBlocks.MAPLE_LOG);
-                    itemGroup.addAfter(Items.PALE_OAK_LEAVES, ModBlocks.MAPLE_LEAVES);
-                    itemGroup.addAfter(Items.PALE_OAK_SAPLING, ModBlocks.MAPLE_SAPLING);
+                    itemGroup.addAfter(Items.PALE_OAK_LEAVES, ModBlocks.GREEN_MAPLE_LEAVES);
+                    itemGroup.addAfter(Items.PALE_OAK_LEAVES, ModBlocks.RED_MAPLE_LEAVES);
+                    itemGroup.addAfter(Items.PALE_OAK_LEAVES, ModBlocks.YELLOW_MAPLE_LEAVES);
+                    itemGroup.addAfter(Items.PALE_OAK_SAPLING, ModBlocks.GREEN_MAPLE_SAPLING);
+                    itemGroup.addAfter(Items.PALE_OAK_SAPLING, ModBlocks.RED_MAPLE_SAPLING);
+                    itemGroup.addAfter(Items.PALE_OAK_SAPLING, ModBlocks.YELLOW_MAPLE_SAPLING);
                 });
     }
 }

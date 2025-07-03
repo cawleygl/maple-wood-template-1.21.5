@@ -1,5 +1,7 @@
 {
   "values": [
-    "maple-wood:maple_sapling"
+    "maple-wood:green_maple_sapling",
+    "maple-wood:yellow_maple_sapling",
+    "maple-wood:red_maple_sapling"
   ]
 }

@@ -1,8 +1,0 @@
-{
-  "parent": "minecraft:block/slab_top",
-  "textures": {
-    "bottom": "maple-wood:block/maple_planks",
-    "side": "maple-wood:block/maple_planks",
-    "top": "maple-wood:block/maple_planks"
-  }
-}

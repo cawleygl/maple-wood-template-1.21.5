@@ -27,7 +27,6 @@ public class MapleWood implements ModInitializer {
 		ModItems.initialize();
 		ModBoats.initialize();
 		ModParticles.initialize();
-//		ModWorldGeneration.generateModWorldGen();
 		ModRegistries.registerStrippables();
 		ModRegistries.registerCompostables();
 		ModRegistries.registerFlammables();

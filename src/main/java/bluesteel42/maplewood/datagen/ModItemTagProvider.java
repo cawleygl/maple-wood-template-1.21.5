@@ -41,7 +41,11 @@ public class ModItemTagProvider extends FabricTagProvider.ItemTagProvider {
         getOrCreateTagBuilder(ItemTags.BOATS).add(ModBoats.MAPLE_BOAT.asItem());
         getOrCreateTagBuilder(ItemTags.CHEST_BOATS).add(ModBoats.MAPLE_CHEST_BOAT.asItem());
 
-        getOrCreateTagBuilder(ItemTags.LEAVES).add(ModBlocks.MAPLE_LEAVES.asItem());
-        getOrCreateTagBuilder(ItemTags.SAPLINGS).add(ModBlocks.MAPLE_SAPLING.asItem());
+        getOrCreateTagBuilder(ItemTags.LEAVES).add(ModBlocks.GREEN_MAPLE_LEAVES.asItem());
+        getOrCreateTagBuilder(ItemTags.LEAVES).add(ModBlocks.RED_MAPLE_LEAVES.asItem());
+        getOrCreateTagBuilder(ItemTags.LEAVES).add(ModBlocks.YELLOW_MAPLE_LEAVES.asItem());
+        getOrCreateTagBuilder(ItemTags.SAPLINGS).add(ModBlocks.GREEN_MAPLE_SAPLING.asItem());
+        getOrCreateTagBuilder(ItemTags.SAPLINGS).add(ModBlocks.RED_MAPLE_SAPLING.asItem());
+        getOrCreateTagBuilder(ItemTags.SAPLINGS).add(ModBlocks.YELLOW_MAPLE_SAPLING.asItem());
     }
 }
