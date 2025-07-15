@@ -2,6 +2,7 @@ package bluesteel42.maplewood.world;
 
 import bluesteel42.maplewood.MapleWood;
 import bluesteel42.maplewood.block.ModBlocks;
+import bluesteel42.standard_wood_initializer.block.StandardWoodModBlocks;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;
@@ -68,10 +69,10 @@ public class ModPlacedFeatures {
 //        register(context, POINTED_YELLOW_MAPLE_BEES_0002_LEAF_LITTER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.POINTED_YELLOW_MAPLE_BEES_0002_LEAF_LITTER_KEY), PlacedFeatures.wouldSurvive(ModBlocks.YELLOW_MAPLE_SAPLING));
 
         /* SAPLING-GENERATED */
-//        register(context, ROUND_GREEN_MAPLE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ROUND_GREEN_MAPLE_KEY), PlacedFeatures.wouldSurvive(ModBlocks.GREEN_MAPLE_SAPLING));
-//        register(context, POINTED_GREEN_MAPLE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.POINTED_GREEN_MAPLE_KEY), PlacedFeatures.wouldSurvive(ModBlocks.GREEN_MAPLE_SAPLING));
-//        register(context, ROUND_GREEN_MAPLE_PLACED_BEES_005_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ROUND_GREEN_MAPLE_BEES_005_KEY), PlacedFeatures.wouldSurvive(ModBlocks.GREEN_MAPLE_SAPLING));
-//        register(context, POINTED_GREEN_MAPLE_PLACED_BEES_005_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.POINTED_GREEN_MAPLE_BEES_005_KEY), PlacedFeatures.wouldSurvive(ModBlocks.GREEN_MAPLE_SAPLING));
+//        register(context, ROUND_GREEN_MAPLE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ROUND_GREEN_MAPLE_KEY), PlacedFeatures.wouldSurvive(StandardWoodModBlocks.MOD_SAPLING));
+//        register(context, POINTED_GREEN_MAPLE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.POINTED_GREEN_MAPLE_KEY), PlacedFeatures.wouldSurvive(StandardWoodModBlocks.MOD_SAPLING));
+//        register(context, ROUND_GREEN_MAPLE_PLACED_BEES_005_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ROUND_GREEN_MAPLE_BEES_005_KEY), PlacedFeatures.wouldSurvive(StandardWoodModBlocks.MOD_SAPLING));
+//        register(context, POINTED_GREEN_MAPLE_PLACED_BEES_005_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.POINTED_GREEN_MAPLE_BEES_005_KEY), PlacedFeatures.wouldSurvive(StandardWoodModBlocks.MOD_SAPLING));
 //        register(context, ROUND_RED_MAPLE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ROUND_RED_MAPLE_KEY), PlacedFeatures.wouldSurvive(ModBlocks.RED_MAPLE_SAPLING));
 //        register(context, POINTED_RED_MAPLE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.POINTED_RED_MAPLE_KEY), PlacedFeatures.wouldSurvive(ModBlocks.RED_MAPLE_SAPLING));
 //        register(context, ROUND_RED_MAPLE_PLACED_BEES_005_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ROUND_RED_MAPLE_BEES_005_KEY), PlacedFeatures.wouldSurvive(ModBlocks.RED_MAPLE_SAPLING));
@@ -82,12 +83,12 @@ public class ModPlacedFeatures {
 //        register(context, POINTED_YELLOW_MAPLE_PLACED_BEES_005_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.POINTED_YELLOW_MAPLE_BEES_005_KEY), PlacedFeatures.wouldSurvive(ModBlocks.YELLOW_MAPLE_SAPLING));
 
         /* FOREST */
-        register(context, ROUND_GREEN_MAPLE_BEES_0002_LEAF_LITTER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ROUND_GREEN_MAPLE_BEES_0002_LEAF_LITTER_KEY), PlacedFeatures.wouldSurvive(ModBlocks.GREEN_MAPLE_SAPLING));
-        register(context, POINTED_GREEN_MAPLE_BEES_0002_LEAF_LITTER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.POINTED_GREEN_MAPLE_BEES_0002_LEAF_LITTER_KEY), PlacedFeatures.wouldSurvive(ModBlocks.GREEN_MAPLE_SAPLING));
+        register(context, ROUND_GREEN_MAPLE_BEES_0002_LEAF_LITTER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ROUND_GREEN_MAPLE_BEES_0002_LEAF_LITTER_KEY), PlacedFeatures.wouldSurvive(StandardWoodModBlocks.MOD_SAPLING));
+        register(context, POINTED_GREEN_MAPLE_BEES_0002_LEAF_LITTER_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.POINTED_GREEN_MAPLE_BEES_0002_LEAF_LITTER_KEY), PlacedFeatures.wouldSurvive(StandardWoodModBlocks.MOD_SAPLING));
 
         /* FLOWER FOREST */
-        register(context, ROUND_GREEN_MAPLE_BEES_002_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ROUND_GREEN_MAPLE_BEES_002_KEY), PlacedFeatures.wouldSurvive(ModBlocks.GREEN_MAPLE_SAPLING));
-        register(context, POINTED_GREEN_MAPLE_BEES_002_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.POINTED_GREEN_MAPLE_BEES_002_KEY), PlacedFeatures.wouldSurvive(ModBlocks.GREEN_MAPLE_SAPLING));
+        register(context, ROUND_GREEN_MAPLE_BEES_002_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ROUND_GREEN_MAPLE_BEES_002_KEY), PlacedFeatures.wouldSurvive(StandardWoodModBlocks.MOD_SAPLING));
+        register(context, POINTED_GREEN_MAPLE_BEES_002_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.POINTED_GREEN_MAPLE_BEES_002_KEY), PlacedFeatures.wouldSurvive(StandardWoodModBlocks.MOD_SAPLING));
         register(context, ROUND_YELLOW_MAPLE_BEES_002_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.ROUND_YELLOW_MAPLE_BEES_002_KEY), PlacedFeatures.wouldSurvive(ModBlocks.YELLOW_MAPLE_SAPLING));
         register(context, POINTED_YELLOW_MAPLE_BEES_002_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.POINTED_YELLOW_MAPLE_BEES_002_KEY), PlacedFeatures.wouldSurvive(ModBlocks.YELLOW_MAPLE_SAPLING));
 
@@ -110,7 +111,7 @@ public class ModPlacedFeatures {
 
 
         /* FALLEN MAPLE TREE */
-        register(context, FALLEN_MAPLE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.FALLEN_MAPLE_TREE_KEY), PlacedFeatures.wouldSurvive(ModBlocks.GREEN_MAPLE_SAPLING));
+        register(context, FALLEN_MAPLE_PLACED_KEY, configuredFeatures.getOrThrow(ModConfiguredFeatures.FALLEN_MAPLE_TREE_KEY), PlacedFeatures.wouldSurvive(StandardWoodModBlocks.MOD_SAPLING));
 
     }
 

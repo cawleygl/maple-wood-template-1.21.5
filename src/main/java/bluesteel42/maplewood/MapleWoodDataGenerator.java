@@ -1,6 +1,7 @@
 package bluesteel42.maplewood;
 
 import bluesteel42.maplewood.datagen.*;
+import bluesteel42.standard_wood_initializer.datagen.*;
 import bluesteel42.maplewood.world.ModConfiguredFeatures;
 import bluesteel42.maplewood.world.ModPlacedFeatures;
 import net.fabricmc.fabric.api.datagen.v1.DataGeneratorEntrypoint;
@@ -17,6 +18,7 @@ public class MapleWoodDataGenerator implements DataGeneratorEntrypoint {
 		pack.addProvider(ModLootTableProvider::new);
 		pack.addProvider(ModModelProvider::new);
 		pack.addProvider(ModRegistryDataGenerator::new);
+		pack.addProvider(StandardWoodModRecipeProvider::new);
 	}
 
 	@Override

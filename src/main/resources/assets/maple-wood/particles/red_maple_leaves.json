@@ -1,16 +1,16 @@
 {
   "textures": [
-    "maple-wood:red_maple_0",
-    "maple-wood:red_maple_1",
-    "maple-wood:red_maple_2",
-    "maple-wood:red_maple_3",
-    "maple-wood:red_maple_4",
-    "maple-wood:red_maple_5",
-    "maple-wood:red_maple_6",
-    "maple-wood:red_maple_7",
-    "maple-wood:red_maple_8",
-    "maple-wood:red_maple_9",
-    "maple-wood:red_maple_10",
-    "maple-wood:red_maple_11"
+    "maple-wood:red_maple_leaf_0",
+    "maple-wood:red_maple_leaf_1",
+    "maple-wood:red_maple_leaf_2",
+    "maple-wood:red_maple_leaf_3",
+    "maple-wood:red_maple_leaf_4",
+    "maple-wood:red_maple_leaf_5",
+    "maple-wood:red_maple_leaf_6",
+    "maple-wood:red_maple_leaf_7",
+    "maple-wood:red_maple_leaf_8",
+    "maple-wood:red_maple_leaf_9",
+    "maple-wood:red_maple_leaf_10",
+    "maple-wood:red_maple_leaf_11"
   ]
 }

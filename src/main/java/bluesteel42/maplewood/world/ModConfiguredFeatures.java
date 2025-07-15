@@ -2,6 +2,7 @@ package bluesteel42.maplewood.world;
 
 import bluesteel42.maplewood.MapleWood;
 import bluesteel42.maplewood.block.ModBlocks;
+import bluesteel42.standard_wood_initializer.block.StandardWoodModBlocks;
 import com.google.common.collect.ImmutableList;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -12,6 +13,7 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.collection.Pool;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
+import net.minecraft.util.math.intprovider.IntProviderType;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;
@@ -62,10 +64,10 @@ public class ModConfiguredFeatures {
     public static final RegistryKey<ConfiguredFeature<?, ?>> FALLEN_MAPLE_TREE_KEY = registerKey("fallen_maple_tree");
 
     public static void bootstrap(Registerable<ConfiguredFeature<?, ?>> context) {
-        BlockStateProvider mapleLogs = BlockStateProvider.of(ModBlocks.MAPLE_LOG);
-        StraightTrunkPlacer roundTrunk = new StraightTrunkPlacer(4, 1, 0);
-        StraightTrunkPlacer pointedTrunk = new StraightTrunkPlacer(6, 2, 2);
-        BlobFoliagePlacer roundFoliage =  new LargeOakFoliagePlacer(ConstantIntProvider.create(3), ConstantIntProvider.create(2), 5);
+        BlockStateProvider mapleLogs = BlockStateProvider.of(StandardWoodModBlocks.MOD_LOG);
+        StraightTrunkPlacer roundTrunk = new StraightTrunkPlacer(5, 2, 0);
+        StraightTrunkPlacer pointedTrunk = new StraightTrunkPlacer(7, 2, 0);
+        BlobFoliagePlacer roundFoliage =  new LargeOakFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 4);
         BlobFoliagePlacer pointedFoliage =  new BlobFoliagePlacer(ConstantIntProvider.create(2), ConstantIntProvider.create(0), 5);
         TwoLayersFeatureSize roundFeatures = new TwoLayersFeatureSize(0, 0, 0, OptionalInt.of(4));
         TwoLayersFeatureSize pointedFeatures = new TwoLayersFeatureSize(2, 1, 0);

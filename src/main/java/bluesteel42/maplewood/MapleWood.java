@@ -1,10 +1,9 @@
 package bluesteel42.maplewood;
 
 import bluesteel42.maplewood.block.ModBlocks;
-import bluesteel42.maplewood.entity.ModBoats;
-import bluesteel42.maplewood.item.ModItems;
 import bluesteel42.maplewood.particle.ModParticles;
 import bluesteel42.maplewood.registries.ModRegistries;
+import bluesteel42.standard_wood_initializer.StandardWoodInitializer;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;
@@ -23,11 +22,10 @@ public class MapleWood implements ModInitializer {
 		// This code runs as soon as Minecraft is in a mod-load-ready state.
 		// However, some things (like resources) may still be uninitialized.
 		// Proceed with mild caution.
+		StandardWoodInitializer.initalizeWoodType();
+
 		ModBlocks.initialize();
-		ModItems.initialize();
-		ModBoats.initialize();
 		ModParticles.initialize();
-		ModRegistries.registerStrippables();
 		ModRegistries.registerCompostables();
 		ModRegistries.registerFlammables();
 		ModRegistries.registerTrades();

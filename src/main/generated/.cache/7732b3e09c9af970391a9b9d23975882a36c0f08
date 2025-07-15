@@ -2,13 +2,13 @@
 9a2e079f02d5b089efc852a14072372d8880ca20 data/maple-wood/tags/block/maple_logs.json
 d2b46e83dbec132cba4da50a55a3edb39912b6e1 data/minecraft/tags/block/ceiling_hanging_signs.json
 49d5e58f837d76107d945cc4397b27c71dc20019 data/minecraft/tags/block/fence_gates.json
-a5260d71c7373a8a125dd8f971995fa784e63f7e data/minecraft/tags/block/flower_pots.json
+39314dbf5b0c1ac19f0bece70fcf3d78b8a39345 data/minecraft/tags/block/flower_pots.json
 572d81a75e7a52c0afe0bf879ab909a604350a85 data/minecraft/tags/block/leaves.json
 905054dd2f38d29a3a5d8b9a3764c5a67a9061a3 data/minecraft/tags/block/logs_that_burn.json
 3b1af1cc3eb24c1b86908a4be23846ca7763145d data/minecraft/tags/block/planks.json
-a6bcff00988aa806b327e1cd4ff4803fa1e70a84 data/minecraft/tags/block/saplings.json
-047d8f768c60e5eb8d9ab49fbc411c040fa631b1 data/minecraft/tags/block/standing_signs.json
-8a594ebca1a6ede78ad33bff7a509a28e68dc370 data/minecraft/tags/block/wall_hanging_signs.json
+f1f322ab5cc361fb1b9d37ee103fceb704f42f77 data/minecraft/tags/block/saplings.json
+cfac482136246a7d6a7ece8af3cdc244f00ec93c data/minecraft/tags/block/standing_signs.json
+5b103d0d8c5495c5e11fcb01fddaf755c3242958 data/minecraft/tags/block/wall_hanging_signs.json
 ec26e6e55181546c6b989485e5cedfe2ce89f5b3 data/minecraft/tags/block/wall_signs.json
 c8a9dfd7982157fdb2ed0ef7f31504d6932a0c3c data/minecraft/tags/block/wooden_buttons.json
 a17b54a696a4482063e528ba369faf8674ba570c data/minecraft/tags/block/wooden_doors.json
