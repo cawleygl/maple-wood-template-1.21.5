@@ -3,6 +3,7 @@
 7d57c61f66b5f8e333ed7192fea601f68818de60 data/maple-wood/advancement/recipes/building_blocks/maple_slab.json
 ac20df3ba63409a794e9e52abe6eac15f9d67c97 data/maple-wood/advancement/recipes/building_blocks/maple_stairs.json
 e4d90b4a649e5d3188df3d58ac49d4d8b33a0ccb data/maple-wood/advancement/recipes/building_blocks/maple_wood.json
+ea8d6facd1947441ce6fb04a819db49c18b1236e data/maple-wood/advancement/recipes/building_blocks/mixed_maple_leaves.json
 21b44af407ef2eb64f57a6ca904db4d5a53c57f4 data/maple-wood/advancement/recipes/building_blocks/stripped_maple_wood.json
 b626c11aa4c58872a93d8630346513492e50d812 data/maple-wood/advancement/recipes/decorations/maple_fence.json
 82637d74c37f24acad43cb5c59fe5015afe519f6 data/maple-wood/advancement/recipes/decorations/maple_hanging_sign.json
@@ -28,4 +29,5 @@ f31c182dfda10cf3f478b0570726bf03939fcd84 data/maple-wood/recipe/maple_fence.json
 7e35c4e5671ef3272321a91893a3d6d5783e9af7 data/maple-wood/recipe/maple_stairs.json
 f30cee9d0cffbdb47e6cea17ab75f07299abc188 data/maple-wood/recipe/maple_trapdoor.json
 169a58f4767aed6ca9024fb888fcf9be980142fa data/maple-wood/recipe/maple_wood.json
+c8e35011359348a2dc012662a680dd91014e837f data/maple-wood/recipe/mixed_maple_leaves.json
 63f0a72015e19191ca8d19a3b9aca5aa62bb9d26 data/maple-wood/recipe/stripped_maple_wood.json

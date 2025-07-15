@@ -1,5 +1,6 @@
-package bluesteel42.standard_wood_initializer.datagen;
+package bluesteel42.maplewood.datagen;
 
+import bluesteel42.maplewood.block.ModBlocks;
 import bluesteel42.standard_wood_initializer.StandardWoodInitializer;
 import bluesteel42.standard_wood_initializer.block.StandardWoodModBlocks;
 import bluesteel42.standard_wood_initializer.entity.StandardWoodModBoats;
@@ -7,7 +8,6 @@ import bluesteel42.standard_wood_initializer.item.StandardWoodModItems;
 import bluesteel42.standard_wood_initializer.util.StandardWoodModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.client.data.BlockStateModelGenerator;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
 import net.minecraft.data.recipe.ShapedRecipeJsonBuilder;
@@ -21,9 +21,9 @@ import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
 
-public class StandardWoodModRecipeProvider extends FabricRecipeProvider {
+public class ModRecipeProvider extends FabricRecipeProvider {
 
-    public StandardWoodModRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
+    public ModRecipeProvider(FabricDataOutput output, CompletableFuture<RegistryWrapper.WrapperLookup> registriesFuture) {
         super(output, registriesFuture);
     }
 
@@ -107,6 +107,14 @@ public class StandardWoodModRecipeProvider extends FabricRecipeProvider {
             @Override
             public void generate() {
                 generateStandardWoodRecipes();
+                createShapeless(RecipeCategory.BUILDING_BLOCKS, ModBlocks.MIXED_MAPLE_LEAVES, 3)
+                        .input(ModBlocks.GREEN_MAPLE_LEAVES)
+                        .input(ModBlocks.RED_MAPLE_LEAVES)
+                        .input(ModBlocks.YELLOW_MAPLE_LEAVES)
+                        .criterion(hasItem(ModBlocks.GREEN_MAPLE_LEAVES), conditionsFromItem(ModBlocks.GREEN_MAPLE_LEAVES))
+                        .criterion(hasItem(ModBlocks.RED_MAPLE_LEAVES), conditionsFromItem(ModBlocks.RED_MAPLE_LEAVES))
+                        .criterion(hasItem(ModBlocks.YELLOW_MAPLE_LEAVES), conditionsFromItem(ModBlocks.YELLOW_MAPLE_LEAVES))
+                        .offerTo(exporter);
             }
         };
     }

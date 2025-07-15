@@ -48,6 +48,7 @@ public class ModBlockTagProvider extends FabricTagProvider.BlockTagProvider {
     @Override
     protected void configure(RegistryWrapper.WrapperLookup wrapperLookup) {
         generateStandardWoodBlocks();
+        getOrCreateTagBuilder(BlockTags.LEAVES).add(ModBlocks.MIXED_MAPLE_LEAVES);
         getOrCreateTagBuilder(BlockTags.LEAVES).add(ModBlocks.GREEN_MAPLE_LEAVES);
         getOrCreateTagBuilder(BlockTags.LEAVES).add(ModBlocks.RED_MAPLE_LEAVES);
         getOrCreateTagBuilder(BlockTags.LEAVES).add(ModBlocks.YELLOW_MAPLE_LEAVES);

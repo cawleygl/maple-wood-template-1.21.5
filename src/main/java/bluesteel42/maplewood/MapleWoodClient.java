@@ -21,6 +21,12 @@ public class MapleWoodClient implements ClientModInitializer {
             }
             return BiomeColors.getFoliageColor(view, pos);
         }, ModBlocks.GREEN_MAPLE_LEAVES);
+        ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> {
+            if (view == null || pos == null) {
+                return FoliageColors.getColor(0.5, 1.0);
+            }
+            return BiomeColors.getFoliageColor(view, pos);
+        }, ModBlocks.MIXED_MAPLE_LEAVES);
         // Register Leaf Particle Effect
         ParticleFactoryRegistry.getInstance().register(ModParticles.GREEN_MAPLE_LEAVES, LeavesParticle.TintedLeavesFactory::new);
         ParticleFactoryRegistry.getInstance().register(ModParticles.RED_MAPLE_LEAVES, LeavesParticle.CherryLeavesFactory::new);

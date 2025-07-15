@@ -33,6 +33,11 @@ public class ModBlocks {
             settings -> new UntintedParticleLeavesBlock(0.01F, ModParticles.YELLOW_MAPLE_LEAVES, settings),
             Blocks.createLeavesSettings(BlockSoundGroup.GRASS), true, true
     );
+    public static final Block MIXED_MAPLE_LEAVES = register(
+            "mixed_maple_leaves",
+            settings -> new MixedParticleMapleLeavesBlock(0.01F, ModParticles.RED_MAPLE_LEAVES, ModParticles.YELLOW_MAPLE_LEAVES, settings),
+            Blocks.createLeavesSettings(BlockSoundGroup.GRASS), true, true
+    );
     public static final Block RED_MAPLE_SAPLING = register(
             "red_maple_sapling",
             settings -> new SaplingBlock(ModSaplingGenerators.RED_MAPLE, settings),
@@ -82,6 +87,7 @@ public class ModBlocks {
     public static void initialize() {
         ItemGroupEvents.modifyEntriesEvent(ItemGroups.NATURAL)
                 .register((itemGroup) -> {
+                    itemGroup.addAfter(Items.PALE_OAK_LEAVES, ModBlocks.MIXED_MAPLE_LEAVES);
                     itemGroup.addAfter(Items.PALE_OAK_LEAVES, ModBlocks.RED_MAPLE_LEAVES);
                     itemGroup.addAfter(Items.PALE_OAK_LEAVES, ModBlocks.YELLOW_MAPLE_LEAVES);
                     itemGroup.addAfter(Items.PALE_OAK_LEAVES, ModBlocks.GREEN_MAPLE_LEAVES);

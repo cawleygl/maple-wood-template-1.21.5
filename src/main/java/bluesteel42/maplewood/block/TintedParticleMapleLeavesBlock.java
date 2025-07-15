@@ -31,7 +31,6 @@ public class TintedParticleMapleLeavesBlock extends LeavesBlock {
     @Override
     protected void spawnLeafParticle(World world, BlockPos pos, Random random) {
         EntityEffectParticleEffect entityEffectParticleEffect = EntityEffectParticleEffect.create(ModParticles.GREEN_MAPLE_LEAVES, world.getBlockColor(pos));
-        MapleWood.LOGGER.info("SPAWN");
         ParticleUtil.spawnParticle(world, pos, random, entityEffectParticleEffect);
     }
 

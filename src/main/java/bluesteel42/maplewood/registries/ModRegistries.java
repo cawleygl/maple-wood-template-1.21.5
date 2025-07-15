@@ -11,6 +11,7 @@ import net.minecraft.village.TradedItem;
 
 public class ModRegistries {
     public static void registerCompostables() {
+        CompostingChanceRegistry.INSTANCE.add(ModBlocks.MIXED_MAPLE_LEAVES, 0.3F);
         CompostingChanceRegistry.INSTANCE.add(ModBlocks.RED_MAPLE_LEAVES, 0.3F);
         CompostingChanceRegistry.INSTANCE.add(ModBlocks.YELLOW_MAPLE_LEAVES, 0.3F);
         CompostingChanceRegistry.INSTANCE.add(ModBlocks.RED_MAPLE_SAPLING, 0.3F);
@@ -18,6 +19,7 @@ public class ModRegistries {
     }
 
     public static void registerFlammables() {
+        FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.MIXED_MAPLE_LEAVES, 30, 60);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.RED_MAPLE_LEAVES, 30, 60);
         FlammableBlockRegistry.getDefaultInstance().add(ModBlocks.YELLOW_MAPLE_LEAVES, 30, 60);
     }

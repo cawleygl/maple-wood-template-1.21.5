@@ -41,6 +41,7 @@ public class ModModelProvider extends FabricModelProvider {
     @Override
     public void generateBlockStateModels(BlockStateModelGenerator blockStateModelGenerator) {
         generateStandardWoodBlockStateModels(blockStateModelGenerator);
+//        blockStateModelGenerator.registerTintedBlockAndItem(ModBlocks.MIXED_MAPLE_LEAVES, TexturedModel.LEAVES, StandardWoodInitializer.LEAF_TINT_COLOR);
         blockStateModelGenerator.registerTintedBlockAndItem(ModBlocks.GREEN_MAPLE_LEAVES, TexturedModel.LEAVES, StandardWoodInitializer.LEAF_TINT_COLOR);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.RED_MAPLE_LEAVES);
         blockStateModelGenerator.registerSimpleCubeAll(ModBlocks.YELLOW_MAPLE_LEAVES);

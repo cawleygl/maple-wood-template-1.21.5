@@ -4,6 +4,19 @@ import bluesteel42.maplewood.block.ModBlocks;
 import bluesteel42.standard_wood_initializer.block.StandardWoodModBlocks;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricBlockLootTableProvider;
+import net.minecraft.block.Block;
+import net.minecraft.enchantment.Enchantment;
+import net.minecraft.enchantment.Enchantments;
+import net.minecraft.item.Items;
+import net.minecraft.loot.LootPool;
+import net.minecraft.loot.LootTable;
+import net.minecraft.loot.condition.TableBonusLootCondition;
+import net.minecraft.loot.entry.ItemEntry;
+import net.minecraft.loot.entry.LeafEntry;
+import net.minecraft.loot.function.SetCountLootFunction;
+import net.minecraft.loot.provider.number.ConstantLootNumberProvider;
+import net.minecraft.loot.provider.number.UniformLootNumberProvider;
+import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
@@ -46,6 +59,7 @@ public class ModLootTableProvider extends FabricBlockLootTableProvider {
         addDrop(ModBlocks.YELLOW_MAPLE_SAPLING);
         addDrop(ModBlocks.POTTED_RED_MAPLE_SAPLING, pottedPlantDrops(ModBlocks.RED_MAPLE_SAPLING));
         addDrop(ModBlocks.POTTED_YELLOW_MAPLE_SAPLING, pottedPlantDrops(ModBlocks.YELLOW_MAPLE_SAPLING));
+        addDrop(ModBlocks.MIXED_MAPLE_LEAVES, leavesDrops(ModBlocks.GREEN_MAPLE_LEAVES, StandardWoodModBlocks.MOD_SAPLING, 0.05f));
         addDrop(ModBlocks.GREEN_MAPLE_LEAVES, leavesDrops(ModBlocks.GREEN_MAPLE_LEAVES, StandardWoodModBlocks.MOD_SAPLING, 0.05f));
         addDrop(ModBlocks.RED_MAPLE_LEAVES, leavesDrops(ModBlocks.RED_MAPLE_LEAVES, ModBlocks.RED_MAPLE_SAPLING, 0.05f));
         addDrop(ModBlocks.YELLOW_MAPLE_LEAVES, leavesDrops(ModBlocks.YELLOW_MAPLE_LEAVES, ModBlocks.YELLOW_MAPLE_SAPLING, 0.05f));
