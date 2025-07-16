@@ -2,7 +2,7 @@ package bluesteel42.maplewood.world;
 
 import bluesteel42.maplewood.MapleWood;
 import bluesteel42.maplewood.block.ModBlocks;
-import bluesteel42.standard_wood_initializer.block.StandardWoodModBlocks;
+import bluesteel42.maplewood.standard_wood_initializer.block.StandardWoodModBlocks;
 import com.google.common.collect.ImmutableList;
 import net.minecraft.block.BlockState;
 import net.minecraft.block.Blocks;
@@ -13,7 +13,6 @@ import net.minecraft.util.Identifier;
 import net.minecraft.util.collection.Pool;
 import net.minecraft.util.math.Direction;
 import net.minecraft.util.math.intprovider.ConstantIntProvider;
-import net.minecraft.util.math.intprovider.IntProviderType;
 import net.minecraft.util.math.intprovider.UniformIntProvider;
 import net.minecraft.world.gen.feature.*;
 import net.minecraft.world.gen.feature.size.TwoLayersFeatureSize;

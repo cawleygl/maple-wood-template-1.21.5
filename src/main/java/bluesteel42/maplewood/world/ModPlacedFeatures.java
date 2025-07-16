@@ -2,7 +2,7 @@ package bluesteel42.maplewood.world;
 
 import bluesteel42.maplewood.MapleWood;
 import bluesteel42.maplewood.block.ModBlocks;
-import bluesteel42.standard_wood_initializer.block.StandardWoodModBlocks;
+import bluesteel42.maplewood.standard_wood_initializer.block.StandardWoodModBlocks;
 import net.minecraft.block.Blocks;
 import net.minecraft.registry.Registerable;
 import net.minecraft.registry.RegistryKey;

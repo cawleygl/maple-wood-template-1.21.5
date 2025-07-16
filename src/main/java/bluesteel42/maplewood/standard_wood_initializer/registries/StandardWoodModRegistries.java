@@ -1,7 +1,7 @@
-package bluesteel42.standard_wood_initializer.registries;
+package bluesteel42.maplewood.standard_wood_initializer.registries;
 
-import bluesteel42.standard_wood_initializer.block.StandardWoodModBlocks;
-import bluesteel42.standard_wood_initializer.entity.StandardWoodModBoats;
+import bluesteel42.maplewood.standard_wood_initializer.block.StandardWoodModBlocks;
+import bluesteel42.maplewood.standard_wood_initializer.entity.StandardWoodModBoats;
 import net.fabricmc.fabric.api.object.builder.v1.trade.TradeOfferHelper;
 import net.fabricmc.fabric.api.registry.CompostingChanceRegistry;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;

@@ -1,8 +1,8 @@
 package bluesteel42.maplewood.datagen;
 
 import bluesteel42.maplewood.block.ModBlocks;
-import bluesteel42.standard_wood_initializer.block.StandardWoodModBlocks;
-import bluesteel42.standard_wood_initializer.util.StandardWoodModTags;
+import bluesteel42.maplewood.standard_wood_initializer.block.StandardWoodModBlocks;
+import bluesteel42.maplewood.standard_wood_initializer.util.StandardWoodModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricTagProvider;
 import net.minecraft.registry.RegistryWrapper;

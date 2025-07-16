@@ -1,7 +1,7 @@
-package bluesteel42.standard_wood_initializer.item;
+package bluesteel42.maplewood.standard_wood_initializer.item;
 
-import bluesteel42.standard_wood_initializer.StandardWoodInitializer;
-import bluesteel42.standard_wood_initializer.block.StandardWoodModBlocks;
+import bluesteel42.maplewood.standard_wood_initializer.StandardWoodInitializer;
+import bluesteel42.maplewood.standard_wood_initializer.block.StandardWoodModBlocks;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.*;
 import net.minecraft.registry.Registries;

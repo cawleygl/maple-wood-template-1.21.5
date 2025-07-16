@@ -1,15 +1,13 @@
-package bluesteel42.standard_wood_initializer;
+package bluesteel42.maplewood.standard_wood_initializer;
 
-import bluesteel42.standard_wood_initializer.block.StandardWoodModBlocks;
-import bluesteel42.standard_wood_initializer.entity.StandardWoodModBoats;
-import bluesteel42.standard_wood_initializer.item.StandardWoodModItems;
-import bluesteel42.standard_wood_initializer.registries.StandardWoodModRegistries;
+import bluesteel42.maplewood.standard_wood_initializer.block.StandardWoodModBlocks;
+import bluesteel42.maplewood.standard_wood_initializer.entity.StandardWoodModBoats;
+import bluesteel42.maplewood.standard_wood_initializer.item.StandardWoodModItems;
+import bluesteel42.maplewood.standard_wood_initializer.registries.StandardWoodModRegistries;
 import bluesteel42.maplewood.MapleWood;
 import bluesteel42.maplewood.world.ModConfiguredFeatures;
 import com.terraformersmc.terraform.boat.api.client.TerraformBoatClientHelper;
-import net.fabricmc.fabric.api.client.rendering.v1.ColorProviderRegistry;
 import net.minecraft.block.MapColor;
-import net.minecraft.client.color.world.BiomeColors;
 import net.minecraft.registry.RegistryKey;
 import net.minecraft.world.biome.FoliageColors;
 import net.minecraft.world.gen.feature.ConfiguredFeature;
@@ -52,7 +50,7 @@ public class StandardWoodInitializer {
         // Color Leaves
 //        ColorProviderRegistry.BLOCK.register((state, view, pos, tintIndex) -> {
 //            if (view == null || pos == null) {
-//                return FoliageColors.getColor(0.5, 1.0);
+//                return LEAF_TINT_COLOR;
 //            }
 //            return BiomeColors.getFoliageColor(view, pos);
 //        }, StandardWoodModBlocks.MOD_LEAVES);

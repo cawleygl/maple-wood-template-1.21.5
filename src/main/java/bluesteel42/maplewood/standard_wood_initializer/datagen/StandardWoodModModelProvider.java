@@ -1,13 +1,11 @@
-package bluesteel42.standard_wood_initializer.datagen;
+package bluesteel42.maplewood.standard_wood_initializer.datagen;
 
-import bluesteel42.standard_wood_initializer.StandardWoodInitializer;
-import bluesteel42.standard_wood_initializer.block.StandardWoodModBlocks;
-import bluesteel42.standard_wood_initializer.entity.StandardWoodModBoats;
+import bluesteel42.maplewood.standard_wood_initializer.block.StandardWoodModBlocks;
+import bluesteel42.maplewood.standard_wood_initializer.entity.StandardWoodModBoats;
 import net.fabricmc.fabric.api.client.datagen.v1.provider.FabricModelProvider;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.minecraft.client.data.BlockStateModelGenerator;
 import net.minecraft.client.data.ItemModelGenerator;
-import net.minecraft.client.data.TexturedModel;
 
 public class StandardWoodModModelProvider extends FabricModelProvider {
     public StandardWoodModModelProvider(FabricDataOutput output) {

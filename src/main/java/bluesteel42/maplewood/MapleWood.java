@@ -3,7 +3,7 @@ package bluesteel42.maplewood;
 import bluesteel42.maplewood.block.ModBlocks;
 import bluesteel42.maplewood.particle.ModParticles;
 import bluesteel42.maplewood.registries.ModRegistries;
-import bluesteel42.standard_wood_initializer.StandardWoodInitializer;
+import bluesteel42.maplewood.standard_wood_initializer.StandardWoodInitializer;
 import net.fabricmc.api.ModInitializer;
 
 import org.slf4j.Logger;

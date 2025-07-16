@@ -1,6 +1,6 @@
-package bluesteel42.standard_wood_initializer.entity;
+package bluesteel42.maplewood.standard_wood_initializer.entity;
 
-import bluesteel42.standard_wood_initializer.StandardWoodInitializer;
+import bluesteel42.maplewood.standard_wood_initializer.StandardWoodInitializer;
 import com.terraformersmc.terraform.boat.api.item.TerraformBoatItemHelper;
 import net.fabricmc.fabric.api.itemgroup.v1.ItemGroupEvents;
 import net.minecraft.item.Item;

@@ -1,7 +1,7 @@
-package bluesteel42.standard_wood_initializer.block;
+package bluesteel42.maplewood.standard_wood_initializer.block;
 
-import bluesteel42.standard_wood_initializer.StandardWoodInitializer;
-import bluesteel42.standard_wood_initializer.tree.StandardWoodModSaplingGenerators;
+import bluesteel42.maplewood.standard_wood_initializer.StandardWoodInitializer;
+import bluesteel42.maplewood.standard_wood_initializer.tree.StandardWoodModSaplingGenerators;
 import com.terraformersmc.terraform.sign.api.block.TerraformHangingSignBlock;
 import com.terraformersmc.terraform.sign.api.block.TerraformSignBlock;
 import com.terraformersmc.terraform.sign.api.block.TerraformWallHangingSignBlock;

@@ -1,6 +1,6 @@
-package bluesteel42.standard_wood_initializer.util;
+package bluesteel42.maplewood.standard_wood_initializer.util;
 
-import bluesteel42.standard_wood_initializer.StandardWoodInitializer;
+import bluesteel42.maplewood.standard_wood_initializer.StandardWoodInitializer;
 import net.minecraft.block.Block;
 import net.minecraft.item.Item;
 import net.minecraft.registry.RegistryKeys;

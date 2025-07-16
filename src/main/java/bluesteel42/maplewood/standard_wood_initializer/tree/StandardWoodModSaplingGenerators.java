@@ -1,6 +1,6 @@
-package bluesteel42.standard_wood_initializer.tree;
+package bluesteel42.maplewood.standard_wood_initializer.tree;
 
-import bluesteel42.standard_wood_initializer.StandardWoodInitializer;
+import bluesteel42.maplewood.standard_wood_initializer.StandardWoodInitializer;
 import net.minecraft.block.SaplingGenerator;
 
 public class StandardWoodModSaplingGenerators {

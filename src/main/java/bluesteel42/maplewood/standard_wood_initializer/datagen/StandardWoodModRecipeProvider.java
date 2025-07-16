@@ -1,22 +1,16 @@
-package bluesteel42.standard_wood_initializer.datagen;
+package bluesteel42.maplewood.standard_wood_initializer.datagen;
 
-import bluesteel42.standard_wood_initializer.StandardWoodInitializer;
-import bluesteel42.standard_wood_initializer.block.StandardWoodModBlocks;
-import bluesteel42.standard_wood_initializer.entity.StandardWoodModBoats;
-import bluesteel42.standard_wood_initializer.item.StandardWoodModItems;
-import bluesteel42.standard_wood_initializer.util.StandardWoodModTags;
+import bluesteel42.maplewood.standard_wood_initializer.StandardWoodInitializer;
+import bluesteel42.maplewood.standard_wood_initializer.block.StandardWoodModBlocks;
+import bluesteel42.maplewood.standard_wood_initializer.entity.StandardWoodModBoats;
+import bluesteel42.maplewood.standard_wood_initializer.item.StandardWoodModItems;
+import bluesteel42.maplewood.standard_wood_initializer.util.StandardWoodModTags;
 import net.fabricmc.fabric.api.datagen.v1.FabricDataOutput;
 import net.fabricmc.fabric.api.datagen.v1.provider.FabricRecipeProvider;
-import net.minecraft.client.data.BlockStateModelGenerator;
 import net.minecraft.data.recipe.RecipeExporter;
 import net.minecraft.data.recipe.RecipeGenerator;
-import net.minecraft.data.recipe.ShapedRecipeJsonBuilder;
-import net.minecraft.data.recipe.ShapelessRecipeJsonBuilder;
-import net.minecraft.item.Item;
 import net.minecraft.item.Items;
 import net.minecraft.recipe.book.RecipeCategory;
-import net.minecraft.registry.RegistryEntryLookup;
-import net.minecraft.registry.RegistryKeys;
 import net.minecraft.registry.RegistryWrapper;
 
 import java.util.concurrent.CompletableFuture;
